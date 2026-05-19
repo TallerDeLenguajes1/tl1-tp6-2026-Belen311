@@ -30,3 +30,41 @@ if (verificarNum)
     Console.WriteLine("No es un numero");
 }
 
+Console.WriteLine("Ingrese un numero");
+string num3 = Console.ReadLine();
+double aux3 = 0;
+double.TryParse(num3, out aux3);
+
+double valorAbs = Math.Abs(aux3);
+Console.WriteLine("Valor absoluto: "+valorAbs);
+
+double cuadrado = Math.Pow(aux3, 2);
+Console.WriteLine("Numero al Cuadrado: "+cuadrado);
+
+double raizCuadrada = Math.Sqrt(aux3);
+Console.WriteLine("Raiz cuadrada: "+raizCuadrada);
+
+double seno = Math.Sin(aux3);
+Console.WriteLine("Seno: "+seno);
+
+double cos = Math.Cos(aux3);
+Console.WriteLine("Cos: "+cos);
+
+double entero = Math.Truncate(aux3);
+Console.WriteLine("Parte entera: "+entero);
+
+Console.WriteLine("Ingrese un numero");
+string comparar1 = Console.ReadLine();
+double comp1 = 0;
+double.TryParse(comparar1, out comp1);
+
+Console.WriteLine("Ingrese un numero");
+string comparar2 = Console.ReadLine();
+double comp2 = 0;
+double.TryParse(comparar2, out comp2);
+
+double max = Math.Max(comp1, comp2);
+Console.WriteLine("Maximo: "+max);
+
+double min = Math.Min(comp1, comp2);
+Console.WriteLine("Minimo: "+min);
